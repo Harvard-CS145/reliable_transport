@@ -38,7 +38,7 @@ echo -e " (process $SENDER_PID)"
 
 echo "Waiting 10 seconds for all to finish"
 sleep 10
-sudo kill -INT $RECEIVER_PID $PROXY_PID $SENDER_ID
+sudo kill -INT $RECEIVER_PID $PROXY_PID $SENDER_PID
 
 echo "Step 4: Compare the results"
 $DIR/compare.sh $FOLDER_PATH/output.txt $DIR/test_message.txt
